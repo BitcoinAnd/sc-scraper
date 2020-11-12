@@ -33,11 +33,11 @@ MEMDEBUG_NOTIFY = ['zach.eberhart@gmail.com']
 # http://doc.scrapy.org/en/latest/topics/settings.html#item-pipelines
 ITEM_PIPELINES = {
   'sc_scraper.pipelines.TrackPipeline'     :   0,
-	'sc_scraper.pipelines.ArtistPipeline'    : 100,
-	'sc_scraper.pipelines.ProfileUrlPipeline': 200,
-	'sc_scraper.pipelines.CommentPipeline'   : 300,
-	'sc_scraper.pipelines.LikersPipeline'    : 400,
-	'sc_scraper.pipelines.RepostersPipeline' : 500,
+        'sc_scraper.pipelines.ArtistPipeline'    : 100,
+        'sc_scraper.pipelines.ProfileUrlPipeline': 200,
+        'sc_scraper.pipelines.CommentPipeline'   : 300,
+        'sc_scraper.pipelines.LikersPipeline'    : 400,
+        'sc_scraper.pipelines.RepostersPipeline' : 500,
 }
 DB_FNAME  = 'sc.db'
 
@@ -71,7 +71,7 @@ SPIDER_MIDDLEWARES = {
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-  
+
   # scrapy splash
   'scrapy_splash.SplashCookiesMiddleware': 723,
   'scrapy_splash.SplashMiddleware': 725,
@@ -81,7 +81,7 @@ DOWNLOADER_MIDDLEWARES = {
   'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
   'scrapy_fake_useragent.middleware.RandomUserAgentMiddleware': 400,
 
-}   
+}
 
 # url of splash server
 SPLASH_URL = 'http://localhost:8050'

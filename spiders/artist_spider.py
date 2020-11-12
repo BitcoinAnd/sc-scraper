@@ -58,5 +58,5 @@ class ArtistSpider(scrapy.Spider):
 
 		yield artist
 
-		
+
 
